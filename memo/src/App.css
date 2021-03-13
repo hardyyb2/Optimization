@@ -6,8 +6,44 @@
   justify-content: center;
   align-items: center;
   overflow-y: hidden;
+  flex-wrap: wrap;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 40px;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.button_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.buttons {
+  padding: 20px;
+  background-color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.child_component {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: bisque;
+  font-weight: bold;
+  margin: 20px;
 }
